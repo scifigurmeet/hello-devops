@@ -7,7 +7,7 @@ class TestApp(unittest.TestCase):
 
     def test_hello(self):
         response = self.client.get('/')
-        self.assertEqual(response.data.decode(), 'Hello, DevOps!')
+        self.assertEqual(response.data.decode(), 'Hello, DevOps! Version 1.0.0')
 
 if __name__ == '__main__':
     unittest.main()
